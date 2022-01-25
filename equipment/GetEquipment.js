@@ -6,24 +6,25 @@ const Briskwrap = require('./Briskwrap')
 class GetEquipment {
     setEquipment(equipment) {
         switch (equipment) {
-            case 'tr': {
+            case 'tabula rasa': {
                 return TabulaRasa.TabulaRasaObject
                 break
             }
-            case 'dc': {
+            case 'dendrobate changed': {
                 return DendrobateChanged.DendrobateChangedObject
                 break
             }
-            case 'cs': {
+            case 'corruption sanctuary': {
                 return CorruptionSanctuaryObject.CorruptionSanctuaryObject
                 break
             }
-            case 'bw': {
+            case 'briskwrap': {
                 return Briskwrap.BriskwrapChangedObject
                 break
             }
             default: {
-                return 'We dont have this equipment'
+                console.log('We dont have this equipment')
+                break
             }
         }
     }

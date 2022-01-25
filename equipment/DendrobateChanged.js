@@ -17,6 +17,17 @@ class DendrobateChanged {
         this._sixth_place = 'empty'
     }
 
+    getSlots() {
+        return [
+            `1-${this._first_place}`,
+            `2-${this._second_place}`,
+            `3-${this._third_place}`,
+            `4-${this._fourth_place}`,
+            `5-${this._fifth_place}`,
+            `6-${this._sixth_place}`
+        ]
+    }
+
     get first_slot() {
         return this._first_slot;
     }

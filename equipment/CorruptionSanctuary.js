@@ -15,6 +15,14 @@ class CorruptionSanctuary {
         this._third_place = 'empty'
     }
 
+    getSlots() {
+        return [
+            `1-${this._first_place}`,
+            `2-${this._second_place}`,
+            `3-${this._third_place}`
+        ]
+    }
+
     get first_slot() {
         return this._first_slot;
     }

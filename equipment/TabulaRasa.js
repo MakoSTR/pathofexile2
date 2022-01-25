@@ -15,6 +15,17 @@ class TabulaRasa {
         this._sixth_place = 'empty'
     }
 
+    getSlots() {
+        return {
+            "1 - w" : this._first_place,
+            "2 - g" : this._second_place,
+            "3 - w" : this._third_place,
+            "4 - w" : this._fourth_place,
+            "5 - w" : this._fifth_place,
+            "6 - w" : this._sixth_place,
+        }
+    }
+
     get first_slot() {
         return this._first_slot;
     }

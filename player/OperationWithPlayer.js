@@ -10,6 +10,10 @@ class OperationWithPlayer {
         return Player.getEquipmentBody()
     }
 
+    getAllParameters(){
+        return Player.getAllParameters()
+    }
+
     checkForPlaceAndColor_setIfWeCan(equipment, place, gem) {
         switch (place) {
             case '1': {
